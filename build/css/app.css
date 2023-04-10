@@ -36,6 +36,12 @@ img {
   max-width: 100%;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -488,6 +494,9 @@ h3 {
     position: relative;
   }
 }
+.contenido-principal .conoce p {
+  font-size: 2rem;
+}
 
 .iconos {
   margin-top: 5rem;
@@ -583,5 +592,64 @@ h3 {
   }
   .galeria .imagen:nth-child(10) img {
     width: 62rem;
+  }
+}
+
+.nuestro-menu {
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5e311e, #5e311e);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 92%, 100%;
+  background-size: 200%;
+  padding: 15rem 5rem 20rem 5rem;
+}
+@media (min-width: 768px) {
+  .nuestro-menu {
+    padding: 15rem 0 20rem 0;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .nuestro-menu {
+    background-size: 50%, 50%, 100%;
+  }
+}
+.nuestro-menu h2 {
+  color: #ffffff;
+}
+.nuestro-menu h2 span {
+  color: #ffffff;
+}
+.nuestro-menu h2::after {
+  display: none;
+}
+
+.menu h3 {
+  color: #ffffff;
+}
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li p {
+  color: #ffffff;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin: 0 0 2.5rem 0;
+}
+.menu li p span {
+  color: #c39c36;
+  display: block;
+}
+.menu li .precio {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
