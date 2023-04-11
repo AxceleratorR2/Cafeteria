@@ -653,3 +653,70 @@ h3 {
     gap: 2rem;
   }
 }
+
+.testimoniales {
+  padding: 10rem 2rem;
+  background-color: #ffffff;
+  margin-top: -10rem;
+}
+@media (min-width: 768px) {
+  .testimoniales {
+    padding: 10rem;
+  }
+}
+.testimoniales .testimonial {
+  background-color: #ebe7de;
+  border-radius: 1rem;
+  padding: 2rem 4rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+.testimoniales .testimonial .autor {
+  color: #5e311e;
+  font-size: 2.5rem;
+  text-align: right;
+  font-family: "Bona Nova", sans-serif;
+}
+
+.footer {
+  background-color: #5e311e;
+}
+.footer .contenido-footer {
+  background-color: #ffffff;
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer .contenido-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.footer .copyright {
+  margin: 0;
+  padding: 2rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-box {
+  font-family: "Bona Nova", sans-serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer-box {
+    margin-bottom: 0;
+  }
+}
+.footer-box h3 {
+  font-family: "Bona Nova", sans-serif;
+  margin: 0 0 1rem 0;
+  font-size: 2.4rem;
+  color: #c39c36;
+}
+.footer-box p,
+.footer-box a {
+  font-size: 2rem;
+  margin: 0;
+}
